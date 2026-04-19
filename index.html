@@ -4,209 +4,444 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EchoBeat X1</title>
+    <title>EchoBeat X1 | Compact Desktop Speakers</title>
+    <meta name="description"
+        content="EchoBeat X1 is currently out of stock due to high demand. Reserve your unit from the next restock batch.">
     <script src="https://cdn.tailwindcss.com"></script>
     <style>
+        :root {
+            color-scheme: dark;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+        }
+
         .scrollbar-hide::-webkit-scrollbar {
-            display: none
+            display: none;
         }
 
         .scrollbar-hide {
             -ms-overflow-style: none;
-            scrollbar-width: none
+            scrollbar-width: none;
+        }
+
+        .product-shadow {
+            filter: drop-shadow(0 32px 44px rgba(0, 0, 0, .55));
+        }
+
+        .modal-open {
+            overflow: hidden;
         }
     </style>
 </head>
 
-<body class="bg-[#0B0B0B] text-white">
-
-    <!-- NAVBAR -->
+<body class="bg-[#070707] text-white antialiased">
     <header
-        class="flex justify-between items-center px-4 py-3 sticky top-0 z-50 bg-[#0B0B0B]/80 backdrop-blur border-b border-white/10">
-        <img src="indianinsta-logo.png" class="h-8">
-        <button onclick="openForm()"
-            class="bg-green-500 hover:bg-green-400 text-black px-4 py-2 rounded-full text-sm font-semibold">Pre-Purchase</button>
+        class="sticky top-0 z-40 border-b border-white/10 bg-[#070707]/88 px-4 py-3 backdrop-blur md:px-8">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4">
+            <a href="#top" class="flex items-center gap-3" aria-label="EchoBeat X1 home">
+                <img src="indianinsta-logo.png" alt="Indian Insta" class="h-8 w-auto"
+                    onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
+                <span class="hidden items-center font-semibold text-white">EchoBeat X1</span>
+            </a>
+            <nav class="hidden items-center gap-6 text-sm text-zinc-300 md:flex" aria-label="Primary navigation">
+                <a class="transition hover:text-white" href="#sound">Sound</a>
+                <a class="transition hover:text-white" href="#details">Details</a>
+                <a class="transition hover:text-white" href="#reviews">Reviews</a>
+            </nav>
+            <button type="button" onclick="openForm()"
+                class="rounded-lg bg-[#22c55e] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#4ade80] focus:outline-none focus:ring-2 focus:ring-[#22c55e] focus:ring-offset-2 focus:ring-offset-[#070707]">
+                Reserve Restock
+            </button>
+        </div>
     </header>
 
-    <!-- HERO -->
-    <section class="px-4 pt-6 pb-2 relative">
-        <!-- Fancy Sticker -->
-        <div
-            class="absolute right-3 top-3 bg-gradient-to-r from-red-600 to-orange-500 text-white text-xs font-bold px-4 py-2 rounded-full shadow-lg animate-bounce">
-            🔥 OUT OF STOCK
-        </div>
+    <main id="top">
+        <section class="relative overflow-hidden bg-[#101010] px-4 pb-10 pt-8 md:px-8 md:pb-16">
+            <div class="mx-auto grid max-w-6xl items-center gap-8 md:min-h-[620px] md:grid-cols-[1fr_.95fr]">
+                <div class="relative z-10 max-w-2xl py-4 md:py-0">
+                    <p
+                        class="inline-flex rounded-md border border-red-400/30 bg-red-500/10 px-3 py-1 text-xs font-semibold uppercase text-red-200">
+                        Out of stock due to heavy demand
+                    </p>
+                    <h1 class="mt-5 text-4xl font-bold leading-tight text-white md:text-6xl">
+                        Sold out today. Reserve the next batch.
+                    </h1>
+                    <p class="mt-4 max-w-xl text-base leading-7 text-zinc-300 md:text-lg">
+                        EchoBeat X1 is currently unavailable because demand moved faster than our stock. Pre-purchase
+                        now to secure your unit from the upcoming restock before the next batch fills up.
+                    </p>
 
-        <span class="text-xs bg-green-500/10 text-green-400 px-3 py-1 rounded-full">HIGH DEMAND</span>
-        <h1 class="text-3xl font-bold leading-tight mt-3">Big Sound.<br><span class="text-green-400">Small Size.</span>
-        </h1>
-        <p class="text-gray-400 mt-2 text-sm">Due to high demand, stock is currently unavailable. Pre-purchase now to
-            reserve your unit.</p>
+                    <div class="mt-6 flex flex-col gap-3 sm:flex-row">
+                        <button type="button" onclick="openForm()"
+                            class="rounded-lg bg-[#22c55e] px-6 py-3 text-center font-semibold text-black transition hover:bg-[#4ade80] focus:outline-none focus:ring-2 focus:ring-[#22c55e] focus:ring-offset-2 focus:ring-offset-[#070707]">
+                            Reserve Next Batch for Rs. 999
+                        </button>
+                        <a href="#details"
+                            class="rounded-lg border border-white/15 px-6 py-3 text-center font-semibold text-white transition hover:border-white/35 hover:bg-white/5">
+                            View Details
+                        </a>
+                    </div>
 
-        <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-1.png"
-            class="w-full my-4">
+                    <div class="mt-7 grid grid-cols-3 gap-3 text-sm text-zinc-300">
+                        <div class="rounded-lg border border-white/10 bg-white/[.03] p-3">
+                            <strong class="block text-white">Current stock</strong>
+                            Sold out
+                        </div>
+                        <div class="rounded-lg border border-white/10 bg-white/[.03] p-3">
+                            <strong class="block text-white">Next batch</strong>
+                            Reservation open
+                        </div>
+                        <div class="rounded-lg border border-white/10 bg-white/[.03] p-3">
+                            <strong class="block text-white">Confirmation</strong>
+                            WhatsApp order ID
+                        </div>
+                    </div>
+                </div>
 
-        <div class="flex justify-between text-xs text-gray-400">
-            <span>🎵 Rich Bass</span>
-            <span>🔌 Plug & Play</span>
-            <span>📦 Compact</span>
-        </div>
-
-        <button onclick="openForm()"
-            class="w-full mt-4 bg-green-500 hover:bg-green-400 text-black py-3 rounded-xl font-semibold">Pre-Purchase</button>
-    </section>
-
-    <!-- TRUST BAR -->
-    <section class="bg-[#111111] text-gray-300 text-xs py-3 flex justify-around border-y border-white/10">
-        <span>⭐ 10K+ Users</span>
-        <span>🚚 Restock Soon</span>
-        <span>🔒 Secure</span>
-    </section>
-
-    <!-- GALLERY -->
-    <section class="bg-black text-white py-6">
-        <h2 class="text-center text-lg font-bold">See It From Every Angle</h2>
-        <p class="text-center text-xs text-gray-500">Swipe to explore</p>
-        <div class="flex gap-4 overflow-x-auto px-4 mt-4 scrollbar-hide">
-            <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-1.png"
-                class="w-52 rounded-xl bg-[#111111] p-2">
-            <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-2.png"
-                class="w-52 rounded-xl bg-[#111111] p-2">
-            <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-3.png"
-                class="w-52 rounded-xl bg-[#111111] p-2">
-            <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-4.png"
-                class="w-52 rounded-xl bg-[#111111] p-2">
-        </div>
-    </section>
-
-    <!-- FEATURES -->
-    <section class="px-4 py-8">
-        <h2 class="text-lg font-bold text-center mb-6">Why You'll Love It</h2>
-        <div class="grid grid-cols-1 gap-4">
-            <div class="flex items-center gap-4 p-4 bg-[#111111] rounded-xl border border-white/5">
-                <span class="text-green-400 text-xl">🎧</span>
-                <div>
-                    <h3 class="font-semibold">Balanced Sound</h3>
-                    <p class="text-xs text-gray-400">Deep bass & clarity</p>
+                <div class="relative z-10 rounded-lg border border-white/10 bg-[#151515] p-4 md:p-6">
+                    <p
+                        class="mb-3 inline-flex rounded-md border border-red-400/30 bg-red-500/10 px-3 py-1 text-xs font-semibold uppercase text-red-200">
+                        Current stock sold out
+                    </p>
+                    <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-1.png"
+                        alt="EchoBeat X1 compact desktop speakers front view"
+                        class="product-shadow mx-auto w-full max-w-lg rounded-lg bg-[#f4f4f4] p-4">
+                    <div class="mt-4 grid grid-cols-3 gap-3">
+                        <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-2.png"
+                            alt="EchoBeat X1 compact desktop speakers side view"
+                            class="aspect-square w-full rounded-lg bg-[#f4f4f4] object-contain p-2">
+                        <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-3.png"
+                            alt="EchoBeat X1 compact desktop speakers detail view"
+                            class="aspect-square w-full rounded-lg bg-[#f4f4f4] object-contain p-2">
+                        <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-4.png"
+                            alt="EchoBeat X1 compact desktop speakers angled view"
+                            class="aspect-square w-full rounded-lg bg-[#f4f4f4] object-contain p-2">
+                    </div>
                 </div>
             </div>
-            <div class="flex items-center gap-4 p-4 bg-[#111111] rounded-xl border border-white/5">
-                <span class="text-green-400 text-xl">⚡</span>
-                <div>
-                    <h3 class="font-semibold">Plug & Play</h3>
-                    <p class="text-xs text-gray-400">Instant setup</p>
+        </section>
+
+        <section class="border-y border-white/10 bg-[#0d0d0d] px-4 py-4 md:px-8">
+            <div class="mx-auto grid max-w-6xl grid-cols-2 gap-3 text-sm text-zinc-300 md:grid-cols-4">
+                <p><strong class="text-white">10K+</strong> customers served</p>
+                <p><strong class="text-white">Sold out</strong> after high demand</p>
+                <p><strong class="text-white">Secure</strong> restock reservation</p>
+                <p><strong class="text-white">Priority</strong> next-batch queue</p>
+            </div>
+        </section>
+
+        <section id="sound" class="px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto max-w-6xl">
+                <div class="max-w-2xl">
+                    <p class="text-sm font-semibold uppercase text-[#86efac]">Built for everyday listening</p>
+                    <h2 class="mt-2 text-3xl font-bold md:text-4xl">Clear calls, focused work, better music.</h2>
+                    <p class="mt-3 text-zinc-400">
+                        Upgrade laptop audio without adding clutter. The EchoBeat X1 is tuned for balanced everyday
+                        sound, from online classes and meetings to playlists and late-night movies.
+                    </p>
+                </div>
+
+                <div class="mt-8 grid gap-4 md:grid-cols-3">
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Balanced Output</p>
+                        <h3 class="mt-2 text-xl font-semibold">Vocals stay clean</h3>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            Tuned for crisp speech, smooth mids, and enough low-end presence for daily entertainment.
+                        </p>
+                    </article>
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Simple Setup</p>
+                        <h3 class="mt-2 text-xl font-semibold">No learning curve</h3>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            Connect, power on, and start listening. Ideal for laptops, desktops, monitors, and study
+                            desks.
+                        </p>
+                    </article>
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Compact Body</p>
+                        <h3 class="mt-2 text-xl font-semibold">More sound, less space</h3>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            A clean two-speaker layout that keeps your desk open while making audio feel fuller.
+                        </p>
+                    </article>
                 </div>
             </div>
-            <div class="flex items-center gap-4 p-4 bg-[#111111] rounded-xl border border-white/5">
-                <span class="text-green-400 text-xl">📱</span>
+        </section>
+
+        <section id="details" class="bg-[#0d0d0d] px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto grid max-w-6xl gap-10 md:grid-cols-[.9fr_1.1fr] md:items-center">
                 <div>
-                    <h3 class="font-semibold">Compact Design</h3>
-                    <p class="text-xs text-gray-400">Fits anywhere</p>
+                    <p class="text-sm font-semibold uppercase text-[#86efac]">Product angles</p>
+                    <h2 class="mt-2 text-3xl font-bold md:text-4xl">Designed to sit neatly on your desk.</h2>
+                    <p class="mt-3 text-zinc-400">
+                        A minimal black finish, front-facing controls, and a small footprint made the first batch move
+                        quickly. Reservations are now open for the next restock.
+                    </p>
+                    <button type="button" onclick="openForm()"
+                        class="mt-6 rounded-lg bg-white px-5 py-3 font-semibold text-black transition hover:bg-zinc-200">
+                        Join the Next Batch
+                    </button>
+                </div>
+
+                <div class="flex gap-4 overflow-x-auto pb-2 scrollbar-hide md:grid md:grid-cols-2 md:overflow-visible">
+                    <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-1.png"
+                        alt="EchoBeat X1 front view"
+                        class="min-w-[260px] rounded-lg bg-[#f4f4f4] object-contain p-4 md:min-w-0">
+                    <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-2.png"
+                        alt="EchoBeat X1 side view"
+                        class="min-w-[260px] rounded-lg bg-[#f4f4f4] object-contain p-4 md:min-w-0">
+                    <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-3.png"
+                        alt="EchoBeat X1 detail view"
+                        class="min-w-[260px] rounded-lg bg-[#f4f4f4] object-contain p-4 md:min-w-0">
+                    <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-4.png"
+                        alt="EchoBeat X1 angled view"
+                        class="min-w-[260px] rounded-lg bg-[#f4f4f4] object-contain p-4 md:min-w-0">
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- REVIEWS -->
-    <section class="bg-[#0F0F0F] py-8 px-4">
-        <div class="flex justify-between items-center mb-4">
-            <h2 class="text-lg font-bold">Reviews</h2>
-            <span class="text-sm text-green-400">4.9 ⭐⭐⭐⭐⭐</span>
-        </div>
-
-        <div class="flex gap-4 overflow-x-auto scrollbar-hide">
-            <div class="min-w-[250px] bg-[#111111] p-4 rounded-xl border border-white/5">
-                <p class="text-sm">"Amazing sound quality for the price."</p>
-                <p class="text-xs mt-2 text-gray-400">Rahul ✔</p>
+        <section class="px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto max-w-6xl">
+                <div class="grid gap-4 md:grid-cols-4">
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Offer price</p>
+                        <p class="mt-1 text-2xl font-bold">Rs. 999</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Regular price</p>
+                        <p class="mt-1 text-2xl font-bold text-zinc-400 line-through">Rs. 1499</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Stock status</p>
+                        <p class="mt-1 text-2xl font-bold">Sold out</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Reservation</p>
+                        <p class="mt-1 text-2xl font-bold">Next batch</p>
+                    </div>
+                </div>
             </div>
-            <div class="min-w-[250px] bg-[#111111] p-4 rounded-xl border border-white/5">
-                <p class="text-sm">"Perfect for my desk setup."</p>
-                <p class="text-xs mt-2 text-gray-400">Priya ✔</p>
-            </div>
-            <div class="min-w-[250px] bg-[#111111] p-4 rounded-xl border border-white/5">
-                <p class="text-sm">"Compact yet powerful!"</p>
-                <p class="text-xs mt-2 text-gray-400">Amit ✔</p>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <!-- PRICING CTA -->
-    <section class="bg-green-500 text-black text-center py-8">
-        <p class="text-sm">Pre-Order Offer</p>
-        <h2 class="text-2xl font-bold">₹999 <span class="line-through text-sm">₹1499</span></h2>
-        <button onclick="openForm()"
-            class="mt-4 bg-black text-white px-6 py-3 rounded-xl font-semibold">Pre-Purchase</button>
-    </section>
+        <section id="reviews" class="bg-[#0d0d0d] px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto max-w-6xl">
+                <div class="flex flex-col justify-between gap-3 md:flex-row md:items-end">
+                    <div>
+                        <p class="text-sm font-semibold uppercase text-[#86efac]">Customer feedback</p>
+                        <h2 class="mt-2 text-3xl font-bold md:text-4xl">Made for real desks.</h2>
+                    </div>
+                    <p class="text-sm text-zinc-300"><strong class="text-white">4.9/5</strong> average rating</p>
+                </div>
 
-    <!-- STICKY CTA -->
+                <div class="mt-8 grid gap-4 md:grid-cols-3">
+                    <figure class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <div class="mb-4 flex items-center gap-3">
+                            <img src="https://media.istockphoto.com/id/1636023306/photo/portrait-of-young-hispanic-businessman-inside-office-boss-in-business-suit-smiling-and.jpg?s=612x612&w=0&k=20&c=3aC2P0heBBWlaVdFq6P711W3TMw7Lqgb5Wru6xwH8_w="
+                                alt="Rahul Sharma customer portrait"
+                                class="h-12 w-12 rounded-lg object-cover">
+                            <div>
+                                <figcaption class="text-sm font-semibold text-white">Rahul Sharma</figcaption>
+                                <p class="text-xs text-zinc-500">Verified customer</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm leading-6 text-zinc-300">
+                            "The sound is much clearer than my laptop speakers, and it does not take over my desk."
+                        </blockquote>
+                    </figure>
+                    <figure class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <div class="mb-4 flex items-center gap-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTj3eYq1cFqpM6mKsi6lEbF8BxGKmWvGs7dJyfU5YmgYaVOXHfNACO8hOY&s"
+                                alt="Priya Mehta customer portrait"
+                                class="h-12 w-12 rounded-lg object-cover">
+                            <div>
+                                <figcaption class="text-sm font-semibold text-white">Priya Mehta</figcaption>
+                                <p class="text-xs text-zinc-500">Verified customer</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm leading-6 text-zinc-300">
+                            "Setup was quick. I use it every day for meetings and music while working."
+                        </blockquote>
+                    </figure>
+                    <figure class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <div class="mb-4 flex items-center gap-3">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRwDi-w4wpDh-t6bB_6xQuZFrjhXVDnruCgGmzSo_aQwA&s"
+                                alt="Amit Verma customer portrait"
+                                class="h-12 w-12 rounded-lg object-cover">
+                            <div>
+                                <figcaption class="text-sm font-semibold text-white">Amit Verma</figcaption>
+                                <p class="text-xs text-zinc-500">Verified customer</p>
+                            </div>
+                        </div>
+                        <blockquote class="text-sm leading-6 text-zinc-300">
+                            "Compact size, good volume, and the price made it an easy upgrade."
+                        </blockquote>
+                    </figure>
+                </div>
+            </div>
+        </section>
+
+        <section class="px-4 py-12 pb-28 md:px-8 md:py-16 md:pb-28">
+            <div
+                class="mx-auto grid max-w-6xl gap-6 rounded-lg border border-[#22c55e]/30 bg-[#102015] p-6 md:grid-cols-[1fr_auto] md:items-center md:p-8">
+                <div>
+                    <p class="text-sm font-semibold uppercase text-[#86efac]">Current batch sold out</p>
+                    <h2 class="mt-2 text-3xl font-bold text-white">Reserve the next EchoBeat X1 batch for Rs. 999.</h2>
+                    <p class="mt-3 max-w-2xl text-zinc-300">
+                        Demand is high and stock is currently unavailable. Submit your details once to get an order ID
+                        and confirm your reservation on WhatsApp.
+                    </p>
+                </div>
+                <button type="button" onclick="openForm()"
+                    class="rounded-lg bg-[#22c55e] px-6 py-3 font-semibold text-black transition hover:bg-[#4ade80]">
+                    Reserve Next Batch
+                </button>
+            </div>
+        </section>
+    </main>
+
     <div
-        class="fixed bottom-0 left-0 right-0 bg-[#0B0B0B] border-t border-white/10 p-3 flex justify-between items-center">
-        <span class="font-bold text-white">₹999</span>
-        <button onclick="openForm()"
-            class="bg-green-500 text-black px-5 py-2 rounded-lg font-semibold">Pre-Purchase</button>
+        class="fixed inset-x-0 bottom-0 z-30 border-t border-white/10 bg-[#070707]/95 p-3 backdrop-blur md:hidden">
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-3">
+            <div>
+                <p class="text-xs text-zinc-400">Sold out. Next batch</p>
+                <p class="font-bold text-white">Rs. 999</p>
+            </div>
+            <button type="button" onclick="openForm()"
+                class="rounded-lg bg-[#22c55e] px-5 py-3 font-semibold text-black transition hover:bg-[#4ade80]">
+                Reserve
+            </button>
+        </div>
     </div>
 
-    <!-- FORM -->
-    <div id="formModal" class="hidden fixed inset-0 bg-black bg-opacity-70 flex justify-center items-center">
-        <div class="bg-[#111111] text-white p-4 rounded-xl w-80 border border-white/10 relative">
-            <button onclick="closeForm()" class="absolute top-2 right-3 text-gray-400 text-lg">✕</button>
+    <div id="formModal" class="hidden fixed inset-0 z-50 items-center justify-center bg-black/75 p-4"
+        role="dialog" aria-modal="true" aria-labelledby="formTitle">
+        <div class="w-full max-w-md rounded-lg border border-white/10 bg-[#111] p-5 text-white shadow-2xl">
+            <div class="flex items-start justify-between gap-4">
+                <div>
+                    <h2 id="formTitle" class="text-xl font-bold">Reserve the Next Batch</h2>
+                    <p class="mt-1 text-sm text-zinc-400">Current stock is sold out. Get your order ID and confirm on WhatsApp.</p>
+                </div>
+                <button type="button" onclick="closeForm()"
+                    class="rounded-lg px-2 py-1 text-xl text-zinc-400 transition hover:bg-white/10 hover:text-white"
+                    aria-label="Close reservation form">
+                    x
+                </button>
+            </div>
 
-            <h2 class="font-bold mb-3">Pre-Purchase</h2>
-            <p class="text-xs text-gray-400 mb-3">Reserve your unit before restock.</p>
-
-            <form id="orderForm" action="https://formspree.io/f/xrerkpgz" method="POST" onsubmit="handleSubmit(event)">
+            <form id="orderForm" class="mt-5" action="https://formspree.io/f/xrerkpgz" method="POST"
+                onsubmit="handleSubmit(event)">
                 <input type="hidden" name="order_id" id="orderId">
+                <input type="hidden" name="product" value="EchoBeat X1">
+                <input type="hidden" name="offer_price" value="Rs. 999">
+                <input type="hidden" name="_subject" value="New EchoBeat X1 Reservation">
 
-                <input class="w-full mb-2 p-2 bg-black border border-white/10 rounded text-white" type="text"
-                    name="name" placeholder="Name" required>
-                <input class="w-full mb-2 p-2 bg-black border border-white/10 rounded text-white" type="email"
-                    name="email" placeholder="Email" required>
-                <input class="w-full mb-2 p-2 bg-black border border-white/10 rounded text-white" type="text"
-                    name="phone" placeholder="Phone" required>
-                <input class="w-full mb-3 p-2 bg-black border border-white/10 rounded text-white" type="text"
-                    name="address" placeholder="Address" required>
+                <label class="mb-3 block text-sm">
+                    <span class="mb-1 block text-zinc-300">Full name</span>
+                    <input
+                        class="w-full rounded-lg border border-white/10 bg-black px-3 py-3 text-white outline-none transition placeholder:text-zinc-600 focus:border-[#22c55e]"
+                        type="text" name="name" placeholder="Your name" autocomplete="name" required>
+                </label>
+                <label class="mb-3 block text-sm">
+                    <span class="mb-1 block text-zinc-300">Email</span>
+                    <input
+                        class="w-full rounded-lg border border-white/10 bg-black px-3 py-3 text-white outline-none transition placeholder:text-zinc-600 focus:border-[#22c55e]"
+                        type="email" name="email" placeholder="you@example.com" autocomplete="email" required>
+                </label>
+                <label class="mb-3 block text-sm">
+                    <span class="mb-1 block text-zinc-300">Phone</span>
+                    <input
+                        class="w-full rounded-lg border border-white/10 bg-black px-3 py-3 text-white outline-none transition placeholder:text-zinc-600 focus:border-[#22c55e]"
+                        type="tel" name="phone" placeholder="10-digit mobile number" inputmode="tel"
+                        autocomplete="tel" pattern="[0-9+\-\s]{10,15}" required>
+                </label>
+                <label class="mb-4 block text-sm">
+                    <span class="mb-1 block text-zinc-300">Delivery address</span>
+                    <textarea
+                        class="min-h-24 w-full resize-none rounded-lg border border-white/10 bg-black px-3 py-3 text-white outline-none transition placeholder:text-zinc-600 focus:border-[#22c55e]"
+                        name="address" placeholder="House number, street, city, pincode" autocomplete="street-address"
+                        required></textarea>
+                </label>
 
-                <input type="hidden" name="_subject" value="New Pre-Order Received">
-
-                <button class="bg-green-500 text-black w-full py-2 rounded">Reserve Order</button>
+                <button id="submitButton"
+                    class="w-full rounded-lg bg-[#22c55e] py-3 font-semibold text-black transition hover:bg-[#4ade80] disabled:cursor-not-allowed disabled:opacity-60">
+                    Create Order ID
+                </button>
+                <p id="formStatus" class="mt-3 hidden text-sm text-zinc-400" aria-live="polite"></p>
             </form>
         </div>
     </div>
 
     <script>
+        const formModal = document.getElementById('formModal');
+        const orderForm = document.getElementById('orderForm');
+        const submitButton = document.getElementById('submitButton');
+        const formStatus = document.getElementById('formStatus');
+
         function openForm() {
-            document.getElementById('formModal').classList.remove('hidden');
+            formModal.classList.remove('hidden');
+            formModal.classList.add('flex');
+            document.body.classList.add('modal-open');
+            setTimeout(() => orderForm.querySelector('[name="name"]').focus(), 50);
         }
 
         function closeForm() {
-            document.getElementById('formModal').classList.add('hidden');
+            formModal.classList.add('hidden');
+            formModal.classList.remove('flex');
+            document.body.classList.remove('modal-open');
+            formStatus.classList.add('hidden');
         }
 
-        function handleSubmit(event) {
+        formModal.addEventListener('click', function (event) {
+            if (event.target === formModal) {
+                closeForm();
+            }
+        });
+
+        document.addEventListener('keydown', function (event) {
+            if (event.key === 'Escape' && !formModal.classList.contains('hidden')) {
+                closeForm();
+            }
+        });
+
+        async function handleSubmit(event) {
             event.preventDefault();
 
-            const form = document.getElementById('orderForm');
-
-            const name = form.querySelector('[name="name"]').value;
-
-            const orderId = "ORD" + Date.now();
+            const name = orderForm.querySelector('[name="name"]').value.trim();
+            const phone = orderForm.querySelector('[name="phone"]').value.trim();
+            const orderId = 'ORD' + Date.now();
             document.getElementById('orderId').value = orderId;
 
-            fetch(form.action, {
-                method: "POST",
-                body: new FormData(form),
-                headers: { 'Accept': 'application/json' }
-            }).then(() => {
+            submitButton.disabled = true;
+            submitButton.textContent = 'Creating Order ID...';
+            formStatus.textContent = 'Please wait while we save your reservation.';
+            formStatus.classList.remove('hidden');
 
-                const message = `Hi, I just pre-ordered EchoBeat X1.\nOrder ID: ${orderId}\nName: ${name}`;
+            try {
+                const response = await fetch(orderForm.action, {
+                    method: 'POST',
+                    body: new FormData(orderForm),
+                    headers: { 'Accept': 'application/json' }
+                });
 
+                if (!response.ok) {
+                    throw new Error('Form submission failed');
+                }
+
+                const message = `Hi, I reserved EchoBeat X1.\nOrder ID: ${orderId}\nName: ${name}\nPhone: ${phone}`;
                 window.location.href = `https://wa.me/917609071259?text=${encodeURIComponent(message)}`;
-
-            }).catch(() => {
-                alert("Something went wrong. Please try again.");
-            });
+            } catch (error) {
+                formStatus.textContent = 'Something went wrong. Please try again or contact us on WhatsApp.';
+                submitButton.disabled = false;
+                submitButton.textContent = 'Create Order ID';
+            }
         }
     </script>
-
 </body>
 
 </html>
