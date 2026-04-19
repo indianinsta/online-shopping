@@ -41,22 +41,31 @@
 </head>
 
 <body class="bg-[#070707] text-white antialiased">
+    <div class="border-b border-white/10 bg-[#0f1712] px-4 py-2 text-center text-xs font-medium text-[#bbf7d0]">
+        Current batch sold out after heavy demand. Next-batch reservations are open for a limited time.
+    </div>
+
     <header
         class="sticky top-0 z-40 border-b border-white/10 bg-[#070707]/88 px-4 py-3 backdrop-blur md:px-8">
-        <div class="mx-auto flex max-w-6xl items-center justify-between gap-4">
-            <a href="#top" class="flex items-center gap-3" aria-label="EchoBeat X1 home">
-                <img src="indianinsta-logo.png" alt="Indian Insta" class="h-8 w-auto"
+        <div class="mx-auto flex max-w-6xl items-center justify-between gap-3">
+            <a href="#top" class="flex min-w-0 items-center" aria-label="Indian Insta EchoBeat X1 home">
+                <img src="indianinsta-logo.png" alt="Indian Insta" class="h-9 w-auto max-w-[145px] object-contain"
                     onerror="this.style.display='none'; this.nextElementSibling.style.display='inline-flex';">
-                <span class="hidden items-center font-semibold text-white">EchoBeat X1</span>
+                <span
+                    class="hidden h-9 items-center rounded-lg border border-white/10 bg-white px-3 text-sm font-bold text-black">
+                    Indian Insta
+                </span>
             </a>
             <nav class="hidden items-center gap-6 text-sm text-zinc-300 md:flex" aria-label="Primary navigation">
-                <a class="transition hover:text-white" href="#sound">Sound</a>
-                <a class="transition hover:text-white" href="#details">Details</a>
+                <a class="transition hover:text-white" href="#sound">Features</a>
+                <a class="transition hover:text-white" href="#details">Gallery</a>
+                <a class="transition hover:text-white" href="#specs">Specs</a>
                 <a class="transition hover:text-white" href="#reviews">Reviews</a>
+                <a class="transition hover:text-white" href="#faq">FAQ</a>
             </nav>
             <button type="button" onclick="openForm()"
-                class="rounded-lg bg-[#22c55e] px-4 py-2 text-sm font-semibold text-black transition hover:bg-[#4ade80] focus:outline-none focus:ring-2 focus:ring-[#22c55e] focus:ring-offset-2 focus:ring-offset-[#070707]">
-                Reserve Restock
+                class="shrink-0 rounded-lg bg-[#22c55e] px-3 py-2 text-sm font-semibold text-black transition hover:bg-[#4ade80] focus:outline-none focus:ring-2 focus:ring-[#22c55e] focus:ring-offset-2 focus:ring-offset-[#070707] sm:px-4">
+                Reserve
             </button>
         </div>
     </header>
@@ -70,11 +79,11 @@
                         Out of stock due to heavy demand
                     </p>
                     <h1 class="mt-5 text-4xl font-bold leading-tight text-white md:text-6xl">
-                        Sold out today. Reserve the next batch.
+                        Premium desk sound, now on restock.
                     </h1>
                     <p class="mt-4 max-w-xl text-base leading-7 text-zinc-300 md:text-lg">
-                        EchoBeat X1 is currently unavailable because demand moved faster than our stock. Pre-purchase
-                        now to secure your unit from the upcoming restock before the next batch fills up.
+                        EchoBeat X1 is sold out after heavy demand. Reserve your unit from the next batch and get a
+                        clean, compact speaker setup made for work, study, and everyday entertainment.
                     </p>
 
                     <div class="mt-6 flex flex-col gap-3 sm:flex-row">
@@ -102,6 +111,12 @@
                             WhatsApp order ID
                         </div>
                     </div>
+
+                    <div class="mt-6 flex flex-wrap gap-2 text-xs text-zinc-300">
+                        <span class="rounded-md border border-white/10 bg-white/[.03] px-3 py-2">Verified reservation flow</span>
+                        <span class="rounded-md border border-white/10 bg-white/[.03] px-3 py-2">Fast WhatsApp confirmation</span>
+                        <span class="rounded-md border border-white/10 bg-white/[.03] px-3 py-2">Secure reservation form</span>
+                    </div>
                 </div>
 
                 <div class="relative z-10 rounded-lg border border-white/10 bg-[#151515] p-4 md:p-6">
@@ -112,6 +127,13 @@
                     <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-1.png"
                         alt="EchoBeat X1 compact desktop speakers front view"
                         class="product-shadow mx-auto w-full max-w-lg rounded-lg bg-[#f4f4f4] p-4">
+                    <div class="mt-4 flex items-end justify-between gap-4 border-b border-white/10 pb-4">
+                        <div>
+                            <p class="text-sm text-zinc-400">Restock price</p>
+                            <p class="text-3xl font-bold">Rs. 999 <span class="text-sm font-medium text-zinc-500 line-through">Rs. 1499</span></p>
+                        </div>
+                        <p class="rounded-md bg-[#22c55e] px-3 py-2 text-xs font-bold uppercase text-black">Save Rs. 500</p>
+                    </div>
                     <div class="mt-4 grid grid-cols-3 gap-3">
                         <img src="https://resource.logitech.com/w_544,h_466,ar_7:6,c_pad,q_auto,f_auto,dpr_1.0/d_transparent.gif/content/dam/logitech/en/products/speakers/computer-speakers/z130/gallery/z130-gallery-2.png"
                             alt="EchoBeat X1 compact desktop speakers side view"
@@ -133,6 +155,34 @@
                 <p><strong class="text-white">Sold out</strong> after high demand</p>
                 <p><strong class="text-white">Secure</strong> restock reservation</p>
                 <p><strong class="text-white">Priority</strong> next-batch queue</p>
+            </div>
+        </section>
+
+        <section class="px-4 py-10 md:px-8 md:py-14">
+            <div class="mx-auto max-w-6xl">
+                <div class="grid gap-4 md:grid-cols-3">
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Step 01</p>
+                        <h2 class="mt-2 text-xl font-semibold">Reserve your slot</h2>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            Fill the short form with your name, phone number, email, and delivery address.
+                        </p>
+                    </article>
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Step 02</p>
+                        <h2 class="mt-2 text-xl font-semibold">Get order ID</h2>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            Your reservation ID is created instantly and shared through WhatsApp confirmation.
+                        </p>
+                    </article>
+                    <article class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm font-semibold text-[#86efac]">Step 03</p>
+                        <h2 class="mt-2 text-xl font-semibold">Wait for restock</h2>
+                        <p class="mt-2 text-sm leading-6 text-zinc-400">
+                            Reserved customers are handled first when the next EchoBeat X1 batch is available.
+                        </p>
+                    </article>
+                </div>
             </div>
         </section>
 
@@ -229,6 +279,50 @@
             </div>
         </section>
 
+        <section id="specs" class="bg-[#0d0d0d] px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-[.9fr_1.1fr] md:items-start">
+                <div>
+                    <p class="text-sm font-semibold uppercase text-[#86efac]">Store details</p>
+                    <h2 class="mt-2 text-3xl font-bold md:text-4xl">Everything a buyer needs to know.</h2>
+                    <p class="mt-3 text-zinc-400">
+                        Check compatibility, use case, reservation status, and confirmation details before joining the
+                        next batch.
+                    </p>
+                    <button type="button" onclick="openForm()"
+                        class="mt-6 rounded-lg bg-[#22c55e] px-5 py-3 font-semibold text-black transition hover:bg-[#4ade80]">
+                        Reserve Restock Slot
+                    </button>
+                </div>
+
+                <div class="grid gap-4 sm:grid-cols-2">
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Speaker type</p>
+                        <p class="mt-1 font-semibold text-white">Compact 2.0 desktop speaker set</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Best for</p>
+                        <p class="mt-1 font-semibold text-white">Laptop, PC, monitor, study desk</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Setup</p>
+                        <p class="mt-1 font-semibold text-white">Plug-and-play daily audio</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Confirmation</p>
+                        <p class="mt-1 font-semibold text-white">Order ID through WhatsApp</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Current status</p>
+                        <p class="mt-1 font-semibold text-white">Out of stock due to demand</p>
+                    </div>
+                    <div class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <p class="text-sm text-zinc-400">Reservation price</p>
+                        <p class="mt-1 font-semibold text-white">Rs. 999 restock offer</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section id="reviews" class="bg-[#0d0d0d] px-4 py-12 md:px-8 md:py-16">
             <div class="mx-auto max-w-6xl">
                 <div class="flex flex-col justify-between gap-3 md:flex-row md:items-end">
@@ -250,6 +344,7 @@
                                 <p class="text-xs text-zinc-500">Verified customer</p>
                             </div>
                         </div>
+                        <p class="mb-3 text-sm tracking-[0] text-[#facc15]">5.0 / 5 rating</p>
                         <blockquote class="text-sm leading-6 text-zinc-300">
                             "The sound is much clearer than my laptop speakers, and it does not take over my desk."
                         </blockquote>
@@ -264,6 +359,7 @@
                                 <p class="text-xs text-zinc-500">Verified customer</p>
                             </div>
                         </div>
+                        <p class="mb-3 text-sm tracking-[0] text-[#facc15]">5.0 / 5 rating</p>
                         <blockquote class="text-sm leading-6 text-zinc-300">
                             "Setup was quick. I use it every day for meetings and music while working."
                         </blockquote>
@@ -278,10 +374,53 @@
                                 <p class="text-xs text-zinc-500">Verified customer</p>
                             </div>
                         </div>
+                        <p class="mb-3 text-sm tracking-[0] text-[#facc15]">5.0 / 5 rating</p>
                         <blockquote class="text-sm leading-6 text-zinc-300">
                             "Compact size, good volume, and the price made it an easy upgrade."
                         </blockquote>
                     </figure>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="px-4 py-12 md:px-8 md:py-16">
+            <div class="mx-auto grid max-w-6xl gap-8 md:grid-cols-[.8fr_1.2fr]">
+                <div>
+                    <p class="text-sm font-semibold uppercase text-[#86efac]">Questions</p>
+                    <h2 class="mt-2 text-3xl font-bold md:text-4xl">Before you reserve.</h2>
+                    <p class="mt-3 text-zinc-400">
+                        Get the important details before joining the next restock queue.
+                    </p>
+                </div>
+
+                <div class="grid gap-3">
+                    <details class="rounded-lg border border-white/10 bg-[#111] p-5" open>
+                        <summary class="cursor-pointer font-semibold text-white">Is EchoBeat X1 available right now?</summary>
+                        <p class="mt-3 text-sm leading-6 text-zinc-400">
+                            Current stock is sold out due to heavy demand. Reservations are open for the next batch.
+                        </p>
+                    </details>
+                    <details class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <summary class="cursor-pointer font-semibold text-white">What happens after I submit the form?</summary>
+                        <p class="mt-3 text-sm leading-6 text-zinc-400">
+                            Your order ID is created, your details are sent securely, and you are redirected to WhatsApp
+                            to confirm the reservation.
+                        </p>
+                    </details>
+                    <details class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <summary class="cursor-pointer font-semibold text-white">Why should I reserve before restock?</summary>
+                        <p class="mt-3 text-sm leading-6 text-zinc-400">
+                            Reserved customers are easier to contact first when the next batch arrives, especially when
+                            demand is already higher than available stock.
+                        </p>
+                    </details>
+                    <details class="rounded-lg border border-white/10 bg-[#111] p-5">
+                        <summary class="cursor-pointer font-semibold text-white">Is the Rs. 999 offer price fixed?</summary>
+                        <p class="mt-3 text-sm leading-6 text-zinc-400">
+                            Rs. 999 is the current restock reservation offer shown on this page. Future pricing can
+                            change after the batch is filled.
+                        </p>
+                    </details>
                 </div>
             </div>
         </section>
